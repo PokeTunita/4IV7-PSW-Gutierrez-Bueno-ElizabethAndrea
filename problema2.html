@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/problemas.css">
+    <script src="problema1.js"></script>
+    <title>Problema 2</title>
+</head>
+<body>
+    <div class="final">
+        <div class="pokelitos">
+            <img src="imagenes/pokelitos.png" class="icono" alt="Pokelitos">
+            <p class="encabezado">Problema 2</p>
+        </div>
+    </div>
+    <p class="enunciado">Un vendedor recibe un sueldo base más un 10% extra por comisión de sus ventas, el vendedor desea saber cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.</p>
+    <form name="ventas" method="get" action="problema2.html">
+        <table>
+            <tr>
+                <td>¿Cuál es su sueldo base?</td>
+                <td class="resolucion">
+                    <input type="text" name="cantidad" id="cantidad" onkeypress="return validarn(event)">                   
+                </td>
+                <td>¿Cuál es el total de sus tres ventas?</td>
+                <td class="resolucion">
+                    <input type="text" name="vendido" id="vendido" onkeypress="return validarn(event)">
+                <td>
+                    <input type="button" value="Calcular" onclick="vender()">
+                </td>                    
+                </td>
+            </tr>
+            <tr>
+                <td>El total de su sueldo en el mes es de: </td>
+                <td>
+                    <input type="text" readonly="readonly" name="total" id="total">
+                </td>
+                <td><input type="reset" value="Borrar" name="borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

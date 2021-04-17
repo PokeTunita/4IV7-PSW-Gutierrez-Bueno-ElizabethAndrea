@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/problemas.css">
+    <script src="problema1.js"></script>
+    <title>Problema 5</title>
+</head>
+<body>
+    <div class="final">
+        <div class="pokelitos">
+            <img src="imagenes/pokelitos.png" class="icono" alt="Pokelitos">
+            <p class="encabezado">Problema 5</p>
+        </div>
+    </div>
+    <p class="enunciado">Un maestro desea saber qué porcentaje de hombres y qué porcentaje de mujeres hay en un grupo de estudiantes.</p>
+    <form name="porcentajes" method="get" action="problema5.html">
+        <table>
+            <tr>
+                <td>Ingrese el total de hombres en el grupo:</td>
+                <td class="resolucion">
+                    <input type="text" name="hombres" id="hombres" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr>
+                <td>Ingrese el total de mujeres en el grupo:</td>
+                <td class="resolucion">
+                    <input type="text" name="mujeres" id="mujeres" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr><td>
+                <input type="button" value="Calcular" onclick="calcular()">
+            </td>
+            </tr>
+            <tr>
+                <td>El promedio de hombres es de : </td>
+                <td>
+                    <input type="text" readonly="readonly" name="ph" id="ph">
+                </td>
+            </tr>
+            <tr>
+                <td>El promedio de mujeres es de : </td>
+                <td>
+                    <input type="text" readonly="readonly" name="pm" id="pm">
+                </td>
+                <td><input type="reset" value="Borrar" name="borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

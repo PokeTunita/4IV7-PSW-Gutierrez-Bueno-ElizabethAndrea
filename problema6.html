@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/problemas.css">
+    <script src="problema1.js"></script>
+    <title>Problema 6</title>
+</head>
+<body>
+    <div class="final">
+        <div class="pokelitos">
+            <img src="imagenes/pokelitos.png" class="icono" alt="Pokelitos">
+            <p class="encabezado">Problema 6</p>
+        </div>
+    </div>
+    <p class="enunciado">Realizar un algoritmo que calcule la edad de una persona.</p>
+    <form name="edad" method="get" action="problema6.html">
+        <table>
+            <tr>
+                <td>Coloca cuál es tu año de nacimiento</td>
+                <td class="resolucion">
+                    <input type="text" name="año" id="año" onkeypress="return validarn(event)">                   
+                </td><td>
+                    <input type="button" value="Calcular" onclick="cEdad()">
+                </td>
+            </tr>
+            <tr>
+                <td>Su edad es de: </td>
+                <td>
+                    <input type="text" readonly="readonly" name="total" id="total">
+                </td>
+                <td><input type="reset" value="Borrar" name="borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

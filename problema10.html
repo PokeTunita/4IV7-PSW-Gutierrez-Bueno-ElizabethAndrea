@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/problemas.css">
+    <script src="problema1.js"></script>
+    <title>Problema 10</title>
+</head>
+<body>
+    <div class="final">
+        <div class="pokelitos">
+            <img src="imagenes/pokelitos.png" class="icono" alt="Pokelitos">
+            <p class="encabezado">Problema 10</p>
+        </div>
+    </div>
+    <p class="enunciado">Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asiga como un porcentaje de su salario mensual que depende de su antigüedad en la empresa de acuerdo con la siguiente Tabla:</p>
+    <table>
+        <tr>
+            <th>Tiempo</th>
+            <th>Utilidad</th>
+        </tr>
+        <tr>
+            <td>Menos de 1 año</td>
+            <td>5% del salario</td>
+        </tr>
+        <tr>
+            <td>1 año o más y menos de 2 años</td>
+            <td>7% del salario</td>
+        </tr>
+        <tr>
+            <td>2 años o más y menos de 5 años</td>
+            <td>10% del salario</td>
+        </tr>
+        <tr>
+            <td>5 años o más y menos de 10 años</td>
+            <td>15% del salario</td>
+        </tr>
+        <tr>
+            <td>10 años o más</td>
+            <td>20% del salario</td>
+        </tr>
+    </table>
+    <form name="salario" method="get" action="problema10.html">
+        <table>
+            <tr>
+                <td>Ingrese su salario</td>
+                <td class="resolucion">
+                    <input type="text" name="salarioss" id="salarioss" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr>
+                <td>Ingrese cuántos meses lleva trabajando en la empresa:</td>
+                <td class="resolucion">
+                    <input type="text" name="meses" id="meses" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr><td>
+                <input type="button" value="Calcular" onclick="abonar()">
+            </td>
+            </tr>
+            <tr>
+                <td>El total del pago de este mes es de: </td>
+                <td>
+                    <input type="text" readonly="readonly" name="total" id="total">
+                </td>
+                <td><input type="reset" value="Borrar" name="borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/problemas.css">
+    <script src="problema1.js"></script>
+    <title>Problema 1</title>
+</head>
+<body>
+    <div class="final">
+        <div class="pokelitos">
+            <img src="imagenes/pokelitos.png" class="icono" alt="Pokelitos">
+            <p class="encabezado">Problema 1</p>
+        </div>
+    </div>
+    <p class="enunciado">Suponga que un individuo desea invertir su capital en un banco y desea saber cuánto dinero ganará después de un mes si el banco paga a razón de 2% mensual.</p>
+    <form name="dinero" method="get" action="problema1.html">
+        <table>
+            <tr>
+                <td>¿Cuánto dinero desea invertir en su capital?</td>
+                <td class="resolucion">
+                    <input type="text" name="cantidad" id="cantidad" onkeypress="return validarn(event)">
+                <td>
+                    <input type="button" value="Calcular" onclick="capital()">
+                </td>                    
+                </td>
+            </tr>
+            <tr>
+                <td>La cantidad de dinero que usted puede recibir al final del mes es de: </td>
+                <td>
+                    <input type="text" readonly="readonly" name="total" id="total">
+                </td>
+                <td><input type="reset" value="Borrar" name="borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

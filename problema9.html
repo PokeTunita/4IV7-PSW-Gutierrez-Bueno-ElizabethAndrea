@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/problemas.css">
+    <script src="problema1.js"></script>
+    <title>Problema 9</title>
+</head>
+<body>
+    <div class="final">
+        <div class="pokelitos">
+            <img src="imagenes/pokelitos.png" class="icono" alt="Pokelitos">
+            <p class="encabezado">Problema 9</p>
+        </div>
+    </div>
+    <p class="enunciado">Determina la cantidada de dinero que recibirá un trabajador por concepto de las horas extras trabajadas en una empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras y que estas se pagan al doble de una hora normal cuando no exceden de 8; si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que se pagan las horas normales y el resto al triple.</p>
+    <form name="horasExtras" method="get" action="problema9.html">
+        <table>
+            <tr>
+                <td>Ingrese horas trabajadas</td>
+                <td class="resolucion">
+                    <input type="text" name="horas" id="horas" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr>
+                <td>Ingrese el pago por hora</td>
+                <td class="resolucion">
+                    <input type="text" name="pago" id="pago" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr><td>
+                <input type="button" value="Calcular" onclick="pagar()">
+            </td>
+            </tr>
+            <tr>
+                <td>El total del pago de este mes es de: </td>
+                <td>
+                    <input type="text" readonly="readonly" name="total" id="total">
+                </td>
+                <td><input type="reset" value="Borrar" name="borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

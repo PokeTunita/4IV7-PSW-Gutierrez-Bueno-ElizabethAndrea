@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/problemas.css">
+    <title>Problema 4</title>
+    <script src="problema1.js"></script>
+</head>
+<body>
+    <div class="final">
+        <div class="pokelitos">
+            <img src="imagenes/pokelitos.png" class="icono" alt="Pokelitos">
+            <p class="encabezado">Problema 4</p>
+        </div>
+    </div>
+    <p class="enunciado">Un alumno desea saber cuál será su calificación final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:</p>
+    <ul class="enunciado">
+        <li>55% del promedio de sus calificaciones parciales.</li>
+        <li>30% de la calificación del examen final.</li>
+        <li>15% de la calificación de un trabajo final.</li>
+    </ul>
+    <form name="calificaciones" method="get" action="problema4.html">
+        <table>
+            <tr>
+                <td>Promedio de calificaciones parciales:</td>
+                <td class="resolucion">
+                    <input type="text" name="parcial" id="parcial" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr>
+                <td>Calificación del examen final</td>
+                <td class="resolucion">
+                    <input type="text" name="examen" id="examen" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr>
+                <td>Calificación del trabajo final</td>
+                <td class="resolucion">
+                    <input type="text" name="trabajo" id="trabajo" onkeypress="return validarn(event)">
+                                    
+                </td>
+            </tr>
+            <tr><td>
+                <input type="button" value="Calcular" onclick="calificar()">
+            </td>
+            </tr>
+            <tr>
+                <td>Su calificación final es de: </td>
+                <td>
+                    <input type="text" readonly="readonly" name="total" id="total">
+                </td>
+                <td><input type="reset" value="Borrar" name="borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
