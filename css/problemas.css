@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(70deg, rgb(236, 236, 152), rgb(187, 171, 81), rgb(197, 199, 80));
+}
+@keyframes tunita{
+    from{
+      background-color: rgb(43, 224, 73);
+    }
+    to{
+      background-color: rgb(143, 226, 10);
+    }
+    from{
+      background-color: rgb(240, 122, 214);
+    }
+  }  
+div.final{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(27, 0, 63);
+    justify-content: center;
+    display: flex;
+    margin-left: 0%;
+    animation-name: tunita;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+div.pokelitos{
+    width: 100vw;
+    background-color: rgb(27, 0, 63);
+    height: 80px;
+    display: flex;
+    margin-left: 0%;
+    animation-name: tunita;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+div.pokelitos img.icono{
+    margin-left: 30px;
+    margin-top: 6px;
+    width: 70px;
+    height: 70px;
+    }
+    @supports(object-fit: cover){
+        div.pokelitos img{
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+    }
+p.encabezado{
+    font-size: 48px;
+    font-family: fantasy;
+    margin-top: 20px;    
+    color: white;
+    margin-left: 1%;
+    text-align: justify;
+    -webkit-text-stroke-color: rgb(76, 105, 67);
+    -webkit-text-stroke-width: 2px;
+}
+p.enunciado, ul.enunciado, th, td, ul{
+    padding: 1%;
+    font-size: 36px;
+    font-family: fantasy;
+    margin-top: 2px;    
+    color: white;
+    margin-left: 1%;
+    text-align: justify;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+}
+th{
+    text-align: center;
+}
+td{
+    text-align: left;
+}
+table{
+    margin: auto;
+
+}

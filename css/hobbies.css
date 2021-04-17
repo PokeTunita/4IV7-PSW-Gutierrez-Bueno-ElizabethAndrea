@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes animacion_test{
+    from{
+        background-color: rgb(212, 0, 255);
+    }
+    to{
+        background-color: rgb(27, 0, 63);
+    }
+}
+@keyframes fondo{
+  from{
+    background-color: black;
+  }
+  to{
+    background-color: rgb(14, 13, 13);
+  }
+}
+body{
+  background-color: black;
+  animation-name: fondo;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+div.cinta{
+  display: flex;
+  flex-flow: column wrap;
+  width: 130vw;
+  height: 100px;
+  background-color: rgb(27, 0, 63);
+  justify-content: center;
+  display: flex;
+  margin-left: 0%;
+  animation-name: animacion_test;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+  div.twitch{
+    width: 100vw;
+    background-color: rgb(27, 0, 63);
+    height: 80px;
+    display: flex;
+    margin-left: 0%;
+    animation-name: animacion_test;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  div.twitch img.icono{
+    margin-left: 30px;
+    margin-top: 6px;
+    width: 70px;
+    height: 70px;
+  }
+  @supports(object-fit: cover){
+      div.cinta img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+@keyframes tunita{
+  from{
+    background-color: rgb(43, 224, 73);
+  }
+  to{
+    background-color: rgb(143, 226, 10);
+  }
+  from{
+    background-color: rgb(240, 122, 214);
+  }
+}  
+div.poke-cinta{
+  display: flex;
+  flex-flow: column wrap;
+  width: 130vw;
+  height: 100px;
+  background-color: rgb(27, 0, 63);
+  justify-content: center;
+  display: flex;
+  margin-left: 0%;
+  animation-name: tunita;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+  div.pokelita{
+    width: 100vw;
+    background-color: rgb(27, 0, 63);
+    height: 80px;
+    display: flex;
+    margin-left: 0%;
+    animation-name: tunita;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  div.pokelita img.icono{
+    margin-left: 30px;
+    margin-top: 6px;
+    width: 70px;
+    height: 70px;
+  }
+  @supports(object-fit: cover){
+      div.pokelita img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+  @keyframes panquecitos{
+    from{
+      background-color: rgb(70, 40, 1);
+    }
+    to{
+      background-color: rgb(11, 146, 22);
+    }
+    from{
+      background-color: rgb(187, 23, 151);
+    }
+  }  
+  div.final{
+    display: flex;
+    flex-flow: column wrap;
+    width: 130vw;
+    height: 100px;
+    background-color: rgb(27, 0, 63);
+    justify-content: center;
+    display: flex;
+    margin-left: 0%;
+    animation-name: panquecitos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+    div.pokelitos{
+      width: 100vw;
+      background-color: rgb(27, 0, 63);
+      height: 80px;
+      display: flex;
+      margin-left: 0%;
+      animation-name: panquecitos;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    div.pokelitos img.icono{
+      margin-left: 30px;
+      margin-top: 6px;
+      width: 70px;
+      height: 70px;
+    }
+    @supports(object-fit: cover){
+        div.pokelita img{
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+    }
+p.texto, ul.texto, a.texto{
+    font-size: 20px;
+    font-family: fantasy;
+    margin-top: 20px;    
+    color: white;
+    margin-left: 3%;
+    text-align: justify;
+}
+article.columna{
+  display: inline-block;
+  width: 45%;
+  height: 45%;
+  padding: 1.5rem;
+}
+video.multimedia, img.multimedia{
+  border-radius: 3%;
+  height: 90%;
+  width: auto;
+}
+article.panas{
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  padding: 0.7rem;
+}
+img.multimedia{
+  border-radius: 3%;
+  height: 300px;
+  width: auto;
+  display:block;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+  margin:auto
+}
+article.musica{
+  display: inline-block;
+  width: 22%;
+  height: 22%;
+  padding: 1rem;
+}
+p.titulo{
+  font-size: 30px;
+  font-family: fantasy;
+  margin-top: 20px;    
+  color: white;
+  margin-left: 3%;
+  text-align: center;
+}
+p.cancion{
+  font-size: 26px;
+  font-family: fantasy;
+  margin-top: 20px;    
+  color: white;
+  margin-left: 3%;
+  text-align: center;
+}
+p.album{
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 20px;    
+  color: white;
+  margin-left: 3%;
+  text-align: center;
+}
+audio{
+  justify-content: center;
+}
