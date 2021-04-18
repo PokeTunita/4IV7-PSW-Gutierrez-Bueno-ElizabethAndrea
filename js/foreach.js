@@ -92,7 +92,7 @@ function problema3(){
             for(var j = 0; j < teclas.length; j++){
                 if(teclitas == teclas.charAt(j))
                     break;
-                if(j == teclas.length){
+                if(j == teclas.length - 1){
                     continuar = false;
                     break;
                 }
@@ -127,7 +127,7 @@ function problema3(){
             
         }
         else{
-            alert("Esperemos que funcione xD");
+            alert("Los carácteres que ingresaste son inválidos.");
         }
         } else{
             alert("No se permiten palabras con demasiados carácteres");
