@@ -80,3 +80,56 @@ function problema2(){
     document.querySelector('#p2-output').textContent = 
     'Producto escalar minimo : '+p2_producto;
 }
+
+function problema3(){
+    var entrada = document.querySelector('#p3-input').value;
+
+    var teclas = "QWERTYUIOPASDFGHJKLÑZXCVBNMÁÍÚÉÓ,";
+    if(entrada.length <= 30){
+        var continuar = true;
+        for(var i=0; i<entrada.length; i++){
+            var teclitas = entrada.charAt(i);
+            for(var j = 0; j < teclas.length; j++){
+                if(teclitas == teclas.charAt(j))
+                    break;
+                if(j == teclas.length){
+                    continuar = false;
+                    break;
+                }
+            }
+        }
+        if(continuar == true){
+            var palabras = entrada.split(',');
+            var array = [];
+            palabras.forEach(function(palabras){
+                var otraArray = [];
+                //Dividir la palabra por carácteres.
+                for(var i = 0; i < palabras.length; i++){
+                    otraArray.push(palabras.charAt(i));
+                }
+                //Eliminar carácteres repetidos.
+                for(var i = otraArray.length -1; i >=0; i--){
+                    if(otraArray.indexOf(otraArray[i]) !== i) otraArray.splice(i,1);
+                }
+                array.push(otraArray.length);
+            });
+            //Evalúa cuál tiene más elementos.
+            var mayor = Math.max.apply(null, array);
+            var respuesta = "";
+            //Concatenar la respuesta en el String.
+            for(var i = 0; i < array.length; i ++){
+                if(array[i] == mayor){
+                    respuesta += palabras[i] + ",";
+                }
+            }
+            //Arrojar resultado.
+            document.querySelector('#p3-output').textContent= 'Las palabra o palabras con ' + respuesta + ' Con ' + mayor + ' caracteres';    
+            
+        }
+        else{
+            alert("Esperemos que funcione xD");
+        }
+        } else{
+            alert("No se permiten palabras con demasiados carácteres");
+        }
+}
